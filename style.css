@@ -68,7 +68,6 @@ body {
     transition: color .3s ease-in-out;
     font-family: 'Dosis', sans-serif;
 }
-
 .navbar-logo:hover {
     color: #f4f5f6;
 }
