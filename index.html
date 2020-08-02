@@ -3,14 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Murad Rustamov | GH Pages</title>
 </head>
 <body>
-    <h1>Welcome</h1>
-    <a href="https://muradr777.github.io/talktome_pb/">TalkToMe/</a>
+    <header class="header">
+        <nav class="navbar">
+            <a href="./index.html" class="navbar-logo">
+                Rustamov
+            </a>
 
-    <footer>
-        <small>Murad Rustamov © | 2020</small>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <div class="container">
+            <h2 class="h-subtitle"></h2>
+            <div class="projects-grid">
+                <div class="grid-item">
+                    <a href="https://muradr777.github.io/talktome_pb/">TalkToMe/</a>
+                </div>
+                <div class="grid-item">
+                    <a href="https://muradr777.github.io/talktome_pb/">TalkToMe/</a>
+                </div>
+                <div class="grid-item">
+                    <a href="https://muradr777.github.io/talktome_pb/">TalkToMe/</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <small>Murad Rustamov © | <span id="getYear"></span></small>
     </footer>
+    
+    <script>
+        let year = new Date().getFullYear();
+        document.getElementById('getYear').innerHTML = year;
+    </script>
 </body>
 </html>
